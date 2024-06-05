@@ -1,0 +1,36 @@
+.button {
+    background: transparent;
+    padding: 5px;
+    border: solid 1px var(--blanco);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Añade un espacio entre el texto y el icono */
+  }
+  
+  .text {
+    color: var(--blanco);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .icon {
+    color: var(--blanco);
+    background: var(--azul);
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 40px;
+  }
+
+  .text:hover{
+    color: var(--azul);
+    transition: 0.5s ease;
+  }
+
+  .icon:hover{
+    color: var(--azul);
+    background: var(--blanco);
+    transition: 0.5s ease;
+    border: solid 1px var(--azul);
+  }
+  

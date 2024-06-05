@@ -1,0 +1,28 @@
+.button {
+    background: var(--azul);
+    border: none;
+    width: 90%;
+    border-radius: 50px;
+}
+
+.icon {
+    color: var(--blanco);
+    background: transparent;
+    font-size: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.info{
+    color: var(--azul);
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.button:hover{
+    background: var(--azulHover);
+    transition: 0.5s ease;
+}
+
