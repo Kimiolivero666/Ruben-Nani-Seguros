@@ -7,7 +7,7 @@ import Card from "../components/UI/Card";
 import { Row, Container, Col } from "react-bootstrap";
 import ButtonContact from "@/components/UI/ButtonContact";
 import ButtonContact2 from "@/components/UI/ButtonContact2";
-import Grid from '@/components/shared/Grid';
+import Grid from '@/components/UI/Grid';
 
 export default function Home() {
   return (

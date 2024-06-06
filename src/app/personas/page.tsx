@@ -1,16 +1,15 @@
-import React from 'react'
-import styles from './personas.module.css';
+// app/personas/page.tsx
 import { Container } from 'react-bootstrap';
+import styles from './personas.module.css';
+import SubMenu from '@/components/shared/SubMenu';
 
-const PersonasPages = () => {
+
+const PersonasPage = () => {
   return (
-    <section className={styles.personas}>
-      <Container>
-      <h1 className={styles.title}>Personas</h1>
-      </Container>
-      
-    </section>
-  )
-}
+   <>
+   <h1>personicas</h1> 
+   </>
+ );
+};
 
-export default PersonasPages
+export default PersonasPage;
