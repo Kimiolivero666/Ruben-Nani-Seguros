@@ -1,0 +1,9 @@
+.hogarTitle{
+    background: var(--verde);
+}
+
+.hogarTitle h2{
+    color: var(--blanco);
+    font-size: 35px;
+    text-transform: uppercase;
+}

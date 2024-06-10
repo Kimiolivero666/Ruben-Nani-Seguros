@@ -1,0 +1,49 @@
+/* TextBox.module.css */
+.box {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.title {
+    color: var(--azul);
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.icon {
+    color: var(--celeste);
+    width: 30px; /* Fijar el tamaño usando width */
+    height: 30px; /* Fijar el tamaño usando height */
+    margin-right: 1rem;
+    flex-shrink: 0; /* Evitar que el icono se encoja */
+}
+
+.parrafo {
+    color: var(--azul);
+    font-size: 22px;
+    flex: 1; /* Permitir que el texto tome el espacio restante */
+}
+
+.parrafoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .parrafo {
+        font-size: 15px;
+    }
+
+    .icon {
+        width: 20px; /* Fijar el tamaño usando width */
+        height: 20px; /* Fijar el tamaño usando height */
+        flex-shrink: 0; /* Evitar que el icono se encoja */  
+    }
+
+}

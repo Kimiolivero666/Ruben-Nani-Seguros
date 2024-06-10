@@ -1,0 +1,14 @@
+
+
+.FooterPersonas{
+    background: var(--celeste);
+}
+
+.boxFooter h2{
+    color: var(--blanco);
+}
+
+.boxFooter h3{
+    color: var(--blanco);
+    font-weight: 300;
+}

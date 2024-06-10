@@ -1,0 +1,45 @@
+.heroBackground {
+    background: var(--blanco);
+    padding: 50px 0;
+}
+
+.heroTitle {
+    font-size: 5rem;
+    font-weight: 300;
+    color: var(--azul);
+    margin-left: 5%; 
+}
+
+.imageWrapper {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos adaptativos (media queries) */
+@media screen and (max-width: 1200px) {
+    .heroTitle {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .heroTitle {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .heroTitle {
+        margin-left: 0; 
+        text-align: center;
+        font-size: 2.5rem; 
+    }
+}

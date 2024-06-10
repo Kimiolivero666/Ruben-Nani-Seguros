@@ -1,0 +1,16 @@
+
+
+
+
+.table-custom {
+    font-size: 1rem; /* Cambiar el tamaño de la fuente */
+}
+
+.table-custom th {
+    background-color: var(--blanco); /* Cambiar el color de fondo de los encabezados */
+    color: #fff; /* Cambiar el color del texto en los encabezados */
+}
+
+.table-custom tbody tr:hover {
+    background-color: #f2f2f2; /* Cambiar el color de fondo al pasar el ratón */
+}

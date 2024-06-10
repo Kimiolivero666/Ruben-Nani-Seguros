@@ -4,7 +4,7 @@
     list-style: none;
 }
 
-.link{
+.link {
     text-decoration: none;
     color: var(--blanco);
     padding-bottom: 2.3rem;
@@ -15,23 +15,74 @@
     border-top-right-radius: 10px;
     font-weight: 500;
     font-size: 20px;
+}
+
+.link:hover {
+    color: var(--azul);
+    background: var(--blanco);
+    transition: 0.5s ease;
+}
+
+.link.activeLink {
+    color: var(--azul);
+    background: var(--blanco);
+    padding-bottom: 2.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .link {
+        font-size: 15px;
     }
 
-    .link:hover{
-        color: var(--azul);
-        background: var(--blanco);
-        transition: 0.5s ease;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .subMenu {
+        justify-content: left;
+    }
+
+    .link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
     }
 
     .link.activeLink {
-        color: var(--azul);
-        background: var(--blanco);
-        padding-bottom: 2.3rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-top: 1rem;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 768px){
+    .subMenu {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .link {
+        padding: 1rem;
+        border-radius: 10px;
         font-size: 20px;
-      }
+    }
+
+    .link.activeLink {
+        padding: 1rem;
+        font-size: 15px;
+        font-size: 20px;
+    }
+    
+}
