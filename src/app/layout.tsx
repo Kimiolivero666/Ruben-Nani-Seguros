@@ -1,4 +1,5 @@
 // src/app/layout.tsx
+import { Footer } from '@/components/shared/Footer';
 import NavbarMenu from '@/components/shared/NavbarMenu';
 
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NavbarMenu/>
         
         {children}
+        <Footer/>
       </body>
     </html>
   );

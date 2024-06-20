@@ -1,0 +1,31 @@
+.saludTitle {
+    background: var(--rosado);
+}
+
+.h3 {
+    color: var(--blanco);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    font-size: 35px;
+}
+
+.buttonCotizar .buttonClass{
+    border: solid 1px var(--celeste);
+}
+
+.buttonCotizar .Text{
+    color: var(--azul);
+}
+
+.buttonCotizar .Text:hover{
+    color: var(--celeste);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .logoSalud {
+        width: 300px;
+        height: 60px;
+    }
+}

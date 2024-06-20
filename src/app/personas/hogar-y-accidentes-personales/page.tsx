@@ -1,21 +1,22 @@
-import Hero2 from '@/components/shared/Hero2'
+
 import React from 'react'
 import styles from './hogar.module.css';
 import { Container } from 'react-bootstrap';
 import TextBox from '@/components/UI/TextBox';
 import FooterPersonas from '@/components/shared/FooterPersonas';
+import HeroPersonas from '@/components/shared/HeroPersonas';
 
 
 
 const page = () => {
   return (
     <div>
-      <Hero2
+      <HeroPersonas
         text1="Mantené"
         text2="asegurado lo"
         text3="que más"
         text4="querés."
-        img="/images/IMG-hogar.png"
+        img="/images/IMG-hogar.webp"
       />
       <div className={`py-5 text-center ${styles.hogarTitle}`}>
         <h2>SEGURO COMBINADO FAMILIAR</h2>
@@ -24,10 +25,10 @@ const page = () => {
         <TextBox
           title='Incendio de edificio'
           parrafo1='Incendio contenido general'
-          parrafo2='Hastos de limpieza y/o retiro de escombros '
+          parrafo2='Gastos de limpieza y/o retiro de escombros '
           parrafo3='Gastos de alojamiento '
           parrafo4='Gastos de mudanza y guardamuebles '
-          parrafo5='Responsabilidad civil linderos '
+          parrafo5='Responsabilidad civil linderos'
           parrafo6=''
           parrafo7=''
           parrafo8=''
@@ -122,7 +123,7 @@ const page = () => {
           parrafo1='Pensada para trabajadores que por su actividad profesional o comercial, un accidente puede repercutir directamente en sus ingresos mensuales o en su economía personal y familiar'
           parrafo2='Vigencia desde 6 meses y hasta 1 año'
           parrafo3='Te cubre las 24 horas, en cualquier momento y lugar'
-          parrafo4='deal para actividades adminitrativas, profesionales, comerciales, trabajadores autónomos, estudiantes, etc'
+          parrafo4='Ideal para actividades adminitrativas, profesionales, comerciales, trabajadores autónomos, estudiantes, etc'
           parrafo5=''
           parrafo6=''
           parrafo7=''

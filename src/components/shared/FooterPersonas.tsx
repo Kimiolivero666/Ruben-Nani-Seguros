@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import styles from './FooterPersonas.module.css';
 import { Container } from 'react-bootstrap';
-import ButtonPrimary from '../UI/ButtonPrimary';
+import CotizarButton from '../UI/CotizarButton';
 
 interface FooterPersonasProps {
   title1: string
@@ -19,7 +19,8 @@ const FooterPersonas: FC<FooterPersonasProps> = ({ title1, title2, title3,  }) =
         <h3 >{title2} <br />
         {title3}</h3>
         <div className="d-flex justify-content-center my-5">
-        <ButtonPrimary text='Cotizar'/>
+        <CotizarButton
+        text='Cotizar'/>
         </div>
         
         </Container>

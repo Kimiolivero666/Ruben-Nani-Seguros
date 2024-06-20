@@ -2,7 +2,7 @@
 import React, { FC } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
-import styles from './Hero2.module.css';
+import styles from './HeroPersonas.module.css';
 
 interface Hero2Props {
     text1: string;
@@ -12,7 +12,7 @@ interface Hero2Props {
     img?: string; // La imagen es opcional
 }
 
-const Hero2: FC<Hero2Props> = ({ text1, text2, text3, text4, img }) => {
+const HeroPersonas: FC<Hero2Props> = ({ text1, text2, text3, text4, img }) => {
     const defaultImage = '/images/default-image.png'; // Ruta a una imagen por defecto en 'public'
 
     return (
@@ -44,4 +44,4 @@ const Hero2: FC<Hero2Props> = ({ text1, text2, text3, text4, img }) => {
     );
 }
 
-export default Hero2;
+export default HeroPersonas;

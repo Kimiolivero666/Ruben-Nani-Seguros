@@ -3,7 +3,6 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import SubMenu from '@/components/shared/SubMenu';
 import styles from './personas.module.css';
-import FooterPersonas from '@/components/shared/FooterPersonas';
 
 const PersonasLayout = ({ children }: { children: React.ReactNode }) => {
   return (

@@ -1,16 +1,15 @@
 
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import Hero2 from '@/components/shared/Hero2';
-import { MdArrowOutward } from "react-icons/md";
 import TextBox from '@/components/UI/TextBox';
 import FooterPersonas from '@/components/shared/FooterPersonas';
+import HeroPersonas from '@/components/shared/HeroPersonas';
 
 const moto = () => {
   return (
 
     <>
-      <Hero2
+      <HeroPersonas
         text1="La mejor"
         text2="cobertura"
         text3="para rodar."

@@ -1,0 +1,19 @@
+.artCotizar{
+    background: var(--verde);
+}
+
+.h2{
+    color: var(--blanco);
+}
+
+.artbuttonCotizar .buttonClass{
+    border: solid 1px var(--celeste);
+}
+
+.artbuttonCotizar .Text{
+    color: var(--azul);
+}
+
+.artbuttonCotizar .Text:hover{
+    color: var(--celeste);
+}

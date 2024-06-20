@@ -1,11 +1,12 @@
 
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import Hero2 from '@/components/shared/Hero2';
+
 import TextBox from '@/components/UI/TextBox';
 import FooterPersonas from '@/components/shared/FooterPersonas';
 import Image from "next/image";
 import styles from './movilidadUrbana.module.css';
+import HeroPersonas from '@/components/shared/HeroPersonas';
 
 
 const movilidadUrbana = () => {
@@ -13,7 +14,7 @@ const movilidadUrbana = () => {
 
     <>
 
-      <Hero2
+      <HeroPersonas
         text1="Hacé lo que"
         text2="más te"
         text3="gusta con"
@@ -60,7 +61,7 @@ const movilidadUrbana = () => {
           </Col>
           <Col lg="auto" md="auto" sm={4} xs={4} className="my-4 text-center">
             <Image src="/images/Recurso17.png" alt="Imagen 6" width={100} height={100} />
-            <p className='mt-3'>
+            <p className={`my-3 ${styles.parrafo}`}>
               Par de skíes, <br />
               Par de palos <br />
             </p>

@@ -5,8 +5,8 @@ import styles from './ButtonContact.module.css';
 import { FaWhatsapp } from "react-icons/fa";
 
 const ButtonContact = () => {
-  const phoneNumber = "+542616431234"; // Asegúrate de usar el formato internacional sin espacios ni guiones
-  const message = "¡Hola! Estoy interesado en obtener más información."; // Mensaje opcional
+  const phoneNumber = "+542616431234";
+  const message = "¡Hola! Estoy interesado en obtener más información.";
 
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

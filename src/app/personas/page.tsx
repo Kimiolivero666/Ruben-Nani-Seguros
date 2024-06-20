@@ -1,20 +1,18 @@
 // app/personas/page.tsx
 import { Container } from 'react-bootstrap';
-import styles from './personas.module.css';
-import SubMenu from '@/components/shared/SubMenu';
-import Hero2 from '@/components/shared/Hero2';
 import DataTable from '@/components/UI/DataTable';
 import FooterPersonas from '@/components/shared/FooterPersonas';
+import HeroPersonas from '@/components/shared/HeroPersonas';
 
 const PersonasPage = () => {
   return (
     <>
-      <Hero2
+      <HeroPersonas
         text1="Conocé las"
         text2="coberturas"
         text3="que tenemos."
         text4="" // Proporciona un valor o deja en blanco si no se necesita
-        img="/images/IMG-auto.png" // Asegúrate de que esta ruta es válida y está en 'public'
+        img="/images/IMG-auto.webp" // Asegúrate de que esta ruta es válida y está en 'public'
       />
       <Container className="my-5">
         <DataTable />

@@ -1,0 +1,57 @@
+.contacto{
+    background: var(--verde);
+}
+
+.title{
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: 5rem;
+}
+
+/* secction contacto */
+.contactame{
+    background: var(--blanco);
+    padding-top: 2rem;
+}
+
+
+.button {
+    background: var(--azul);
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+
+.boxContacto {
+    background: var(--azul);
+    border: none;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+
+.icon {
+    color: var(--blanco);
+    background: transparent;
+    font-size: 32px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.info{
+    color: var(--azul);
+    margin-top: 1rem;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.button:hover{
+    background: var(--azulHover);
+    transition: 0.5s ease;
+}

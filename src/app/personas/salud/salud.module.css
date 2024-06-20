@@ -1,0 +1,63 @@
+
+
+.saludTitle{
+    background: var(--rosado);
+}
+
+.parrafo{
+    color: var(--azul);
+}
+
+.saludCotizar{
+    background: var(--azul);
+}
+
+.h2{
+    color: var(--blanco);
+}
+
+.h2grid{
+    color: var(--azul);
+}
+
+.titleGrid{
+background: var(--blanco);
+}
+
+.gridSalud{
+    width: 55%;
+    background: var(--blanco);
+}
+
+.saludCotizar .CelesteIcon {
+    background: var(--celeste); 
+}
+
+.saludCotizar .hoverText:hover{
+    color: var(--celeste);
+}
+
+.buttonCotizar .buttonClass{
+    border: solid 1px var(--celeste);
+}
+
+.buttonCotizar .Text{
+    color: var(--azul);
+}
+
+.buttonCotizar .Text:hover{
+    color: var(--celeste);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .gridSalud {
+        width: 100%;
+    }
+    
+    .logoSalud {
+        width: 300px;
+        height: 60px;
+    }
+}

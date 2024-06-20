@@ -1,0 +1,57 @@
+.nosotros{
+    background: var(--naranja);
+}
+
+.title{
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 3rem;
+    font-weight: 300;
+    font-size: 5rem;
+}
+
+.box {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.titleExpeeriencia {
+    color: var(--azul);
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.parrafo {
+    color: var(--azul);
+    font-size: 22px;
+    flex: 1; /* Permitir que el texto tome el espacio restante */
+}
+
+/* button */
+.buttonCotizar .buttonClass{
+    border: solid 1px var(--celeste);
+}
+
+.buttonCotizar .Text{
+    color: var(--azul);
+}
+
+.buttonCotizar .Text:hover{
+    color: var(--celeste);
+}
+
+
+/* responsive */
+@media screen and (max-width: 768px) {
+    .titleExpeeriencia {
+        font-size: 30px;
+    }
+
+    .parrafo {
+        font-size: 15px;
+    }
+
+
+}

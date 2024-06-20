@@ -1,38 +1,42 @@
 import React from 'react'
 import styles from './hero.module.css';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
+import Image from 'next/image';
 import ButtonPrimary from './ButtonPrimary';
 
 
 const Hero = () => {
   return (
-    <section>
-      {/* desktop */}
-      <div className={`position-relative ${styles.hero}`}>
-        <Container>
-          <div className={styles.title}>
-            <h1>La tranquilidad <br /> de estar en <br /> buenas manos</h1>
+   <div className={styles.heroBackground}>
+    <Container>
+      <Row className="align-items-center text-center text-md-start">
+        <Col md={6}>
+        <div className={styles.Title}>
+          <h1 className={styles.heroTitle}>
+            La tranquilidad <br />
+            de estar en <br />
+            buenas manos
+          </h1>
+          <ButtonPrimary type="button" text="Consultar" />
           </div>
-          <div className={styles.buttonHero}>
-            <ButtonPrimary type="button" text="Consultar" />
+          
+        </Col>
+        <Col md={6} className="text-center">
+          <div className={styles.imageWrapper}>
+            <Image
+              src='/images/IMG-home.webp'
+              alt="Hero"
+              width={400} 
+              height={300} 
+              className={styles.heroImage}
+            />
           </div>
-        </Container>
-      </div>
-      {/* mobile */}
-      <div className={`position-relative ${styles.heroMobile}`}>
-        <Container >
-          <div className={styles.boxMobile} >
-            <div className={styles.title}>
-              <h1>La tranquilidad <br /> de estar en <br /> buenas manos</h1>
-            </div>
-            <div className={styles.buttonHero}>
-              <ButtonPrimary type="button" text="Consultar" />
-            </div>
-          </div>
-        </Container>
-      </div>
-    </section>
-  )
+        </Col>
+      </Row>
+    </Container>
+  </div>
+  
+  );
 }
 
 export default Hero
