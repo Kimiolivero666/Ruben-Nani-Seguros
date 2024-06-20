@@ -34,126 +34,145 @@
 }
 
 
-.footerInfo ul{
+.footerInfo ul {
     list-style: none;
     color: var(--blanco);
 }
 
-.footerLiInfo{
+.footerLiInfo {
     display: flex;
-    align-items: center; /* Centrado vertical */
-    gap: 10px; /* Espacio entre el icono y el texto */
-    margin-bottom: 10px; /* Espacio inferior entre elementos */
+    align-items: center;
+    /* Centrado vertical */
+    gap: 10px;
+    /* Espacio entre el icono y el texto */
+    margin-bottom: 10px;
+    /* Espacio inferior entre elementos */
 }
 
 .footerLiInfo a,
 .footerLiInfo p {
-    margin: 0; /* Elimina márgenes por defecto */
+    margin: 0;
+    /* Elimina márgenes por defecto */
     color: var(--blanco);
     text-decoration: none;
     font-size: 18px;
 }
 
-.footerCopyright{
+.footerCopyright {
     margin-top: 2rem;
 }
 
 /* footer pie de pagina */
 
 
-.footerMatriculaP{
+.footerMatriculaP {
     margin-bottom: 0;
     font-size: 13px;
 }
 
-.footerDptoOrientacion{
+.footerDptoOrientacion {
     border-left: solid 1px var(--azul);
     border-right: solid 1px var(--azul);
 }
 
-.footerBoxDptoOrientacion p{
-margin-bottom: 0;
-font-size: 13px;
+.footerBoxDptoOrientacion p {
+    margin-bottom: 0;
+    font-size: 13px;
 }
 
-.ParrafodptoOrientacion{
+.ParrafodptoOrientacion {
     color: var(--celeste);
     margin-bottom: 0;
 }
 
-.footerSuperIntendencia a{
+.footerSuperIntendencia a {
     text-decoration: none;
     color: var(--celeste);
 }
 
 .footerSuperIntendencia img {
-    width: auto; /* Permite que el ancho se ajuste automáticamente */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    max-width: 100%; /* Limita el ancho máximo al 100% del contenedor padre */
-    max-height: 100%; /* Limita la altura máxima al 100% del contenedor padre */
-    object-fit: contain; /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
+    width: auto;
+    /* Permite que el ancho se ajuste automáticamente */
+    height: auto;
+    /* Ajusta la altura automáticamente para mantener la proporción */
+    max-width: 100%;
+    /* Limita el ancho máximo al 100% del contenedor padre */
+    max-height: 100%;
+    /* Limita la altura máxima al 100% del contenedor padre */
+    object-fit: contain;
+    /* Asegura que la imagen se ajuste dentro del contenedor sin recortarse */
 }
 
 
 /*  responsive */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .footerLink {
         font-size: 15px;
     }
 
-    .footerInfo ul{
+    .footerInfo ul {
         margin-top: 2rem;
     }
-    
+
     .footerLiInfo a,
     .footerLiInfo p {
         font-size: 15px;
     }
-    .footerCopyright{
+
+    .footerCopyright {
         font-size: 12px;
     }
-    
+
 }
 
 /* responsive pie de pagina */
 
-@media screen and (max-width: 992px){
-    .footerSuperIntendencia{
+@media screen and (max-width: 992px) {
+    .footerSuperIntendencia {
         padding-top: 2rem;
     }
-}
 
-@media screen and (max-width: 768px){
-    .footerDptoOrientacion{
+    .footerDptoOrientacion {
         border-left: none;
         border-right: none;
         padding-top: 2rem;
     }
-}
-
-@media screen and (max-width: 576px){
-    .footerMatricula{
-        margin-left: auto; /* Margen automático para centrado horizontal */
-        margin-right: auto; /* Margen automático para centrado horizontal */
-        max-width: 50%; /* Ajusta el ancho máximo para un centrado mejorado */
-    }
-
-    .footerMatriculaP{
-        font-size: 12px;
-    }
-    .footerDptoOrientacion{
-        border-left: none;
-        border-right: none;
-        padding-top: 2rem;
-    }
-     
-    .footerBoxDptoOrientacion p{
-        font-size: 12px;
-    }
-
     
-.footerSuperIntendencia a{
-        font-size: 12px;
+
+    .footerMatricula {
+        margin-left: auto;
+        /* Margen automático para centrado horizontal */
+        margin-right: auto;
+        /* Margen automático para centrado horizontal */
+        max-width: 50%;
+        /* Ajusta el ancho máximo para un centrado mejorado */
     }
 }
 
+
+
+@media screen and (max-width: 576px) {
+
+    .footerMatriculaP {
+        font-size: 12px;
+    }
+
+    .footerDptoOrientacion {
+        border-left: none;
+        border-right: none;
+        padding-top: 2rem;
+    }
+
+    .footerBoxDptoOrientacion p {
+        font-size: 12px;
+    }
+
+
+    .footerSuperIntendencia a {
+        font-size: 12px;
+    }
+
+    .footerSuperIntendencia img {
+        width: 150px;
+    }
+}
