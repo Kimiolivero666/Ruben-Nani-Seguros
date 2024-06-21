@@ -17,7 +17,7 @@ const Hero = () => {
             de estar en <br />
             buenas manos
           </h1>
-          <ButtonPrimary type="button" text="Consultar" />
+          <ButtonPrimary type="button" text="Consultar" href="/contacto" />
           </div>
           
         </Col>

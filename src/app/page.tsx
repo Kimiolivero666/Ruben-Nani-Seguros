@@ -19,16 +19,16 @@ export default function Home() {
             <div>
               <Row>
                 <Col md={6} lg={3} className="d-flex justify-content-center align-items-center my-3">
-                  <Card icon="/images/icono-1.webp" title="Personas" />
+                    <Card icon="/images/icono-1.webp" title="Personas" href="/personas" />
                 </Col>
                 <Col md={6} lg={3} className="d-flex justify-content-center align-items-center my-3">
-                  <Card icon="/images/icono-2.webp" title="Empresas" />
+                  <Card icon="/images/icono-2.webp" title="Empresas"  href="/empresas" />
                 </Col>
                 <Col md={6} lg={3} className="d-flex justify-content-center align-items-center my-3">
-                  <Card icon="/images/icono-3.webp" title="Transportes" />
+                  <Card icon="/images/icono-3.webp" title="Transportes"  href="/empresas/transporte" />
                 </Col>
                 <Col md={6} lg={3} className="d-flex justify-content-center align-items-center my-3">
-                  <Card icon="/images/icono-4.webp" title="Bco Del Sol" />
+                  <Card icon="/images/icono-4.webp" title="Bco Del Sol"  href="/bancoDelSol" />
                 </Col>
               </Row>
             </div>
@@ -49,8 +49,8 @@ export default function Home() {
         </section>
 
         <section className={`pb-5 ${styles.grid}`}>
-          
-            <Grid />
+
+          <Grid />
 
         </section>
       </div>

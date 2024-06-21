@@ -5,6 +5,7 @@ import styles from './banco.module.css';
 import Image from 'next/image';
 import TextBox from '@/components/UI/TextBox';
 import CotizarButton from '@/components/UI/CotizarButton';
+import ButtonPrimary from '@/components/UI/ButtonPrimary';
 
 const BancoDelSolpage = () => {
   return (
@@ -55,18 +56,16 @@ const BancoDelSolpage = () => {
 
       {/* footer */}
       <div className={`py-5 text-center ${styles.descargar}`}>
-   <h2 className={styles.h2}>¿Qué esperás?</h2>
-   <h3 className={styles.h3}>Descargá la App y empezá ahora</h3>
-   <h3 className={styles.h3}>a disfrutar los mejores beneficios</h3>
-   <div className="d-flex justify-content-center my-5">
-     <CotizarButton
-       text='Cotizar'
-       className={styles.buttonClass}
-       IconoclassName={styles.CelesteIcon}
-       textClassName={styles.hoverText}
-     />
-   </div>
- </div>
+        <h2 className={styles.h2}>¿Qué esperás?</h2>
+        <h3 className={styles.h3}>Descargá la App y empezá ahora</h3>
+        <h3 className={styles.h3}>a disfrutar los mejores beneficios</h3>
+        <div className="d-flex justify-content-center my-5">
+          <a className={styles.aHref} href="https://open.bancodelsol.com/sfBz8MjWDakGAkJz9"  target="_blank"
+            rel="noopener noreferrer">
+            <ButtonPrimary text='Descargar' />
+          </a>
+        </div>
+      </div>
     </>
   )
 }

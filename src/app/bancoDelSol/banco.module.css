@@ -12,6 +12,10 @@
     font-size: 5rem;
 }
 
+.aHref{
+    text-decoration: none;
+}
+
 /* hero */
 
 .heroBackground {
