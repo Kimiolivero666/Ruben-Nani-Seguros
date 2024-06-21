@@ -12,7 +12,7 @@ import HeroPersonas from '@/components/shared/HeroPersonas';
 const movilidadUrbana = () => {
   return (
 
-    <>
+    <div id='movilidad-urbana'>
 
       <HeroPersonas
         text1="Hacé lo que"
@@ -123,7 +123,7 @@ const movilidadUrbana = () => {
       </Container>
 
       <FooterPersonas title1='Que los imprevistos no te compliquen.' title2='Contratá un seguro para estar tranquilo en' title3='todos los ámbitos de tu vida.' />
-    </>
+    </div>
   )
 }
 

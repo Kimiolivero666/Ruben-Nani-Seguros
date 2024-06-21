@@ -8,7 +8,7 @@ import CotizarButton from '@/components/UI/CotizarButton';
 
 const Salud = () => {
   return (
-    <div>
+    <div id='salud'>
       <HeroPersonas
         text1="Tu familia se"
         text2="merece estar"

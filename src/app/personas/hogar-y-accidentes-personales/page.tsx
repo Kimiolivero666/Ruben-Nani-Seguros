@@ -10,7 +10,7 @@ import HeroPersonas from '@/components/shared/HeroPersonas';
 
 const page = () => {
   return (
-    <div>
+    <div id='hogar-y-accidentes-personales'>
       <HeroPersonas
         text1="Mantené"
         text2="asegurado lo"

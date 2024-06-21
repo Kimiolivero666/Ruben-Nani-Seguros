@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap'
 
 const EmpresasPage = () => {
   return (
-    <div>
+    <>
       <HeroPersonas
         text1="Consultá por"
         text2="tu flota."
@@ -18,7 +18,7 @@ const EmpresasPage = () => {
         <DataTable />
       </Container>
       <FooterPersonas title1='¿Ya tenés póliza?' title2='Envianosla y te mejoramos los costos en las' title3='mejores compañías' />
-    </div>
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ import HeroPersonas from '@/components/shared/HeroPersonas';
 const moto = () => {
   return (
 
-    <>
+    < div id='moto'>
       <HeroPersonas
         text1="La mejor"
         text2="cobertura"
@@ -34,7 +34,7 @@ const moto = () => {
         
       </Container>
       <FooterPersonas title1='¿Ya tenés póliza?' title2='Envianosla y te mejoramos los costos en las' title3='mejores compañías'/>
-    </>
+    </ div>
   )
 }
 
