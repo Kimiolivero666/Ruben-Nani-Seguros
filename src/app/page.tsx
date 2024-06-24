@@ -1,6 +1,6 @@
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./globals.css";
+
+
 import styles from './page.module.css';
 import Hero from "@/components/UI/Hero";
 import Card from "../components/UI/Card";

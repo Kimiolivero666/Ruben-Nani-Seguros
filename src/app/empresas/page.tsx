@@ -4,6 +4,7 @@ import HeroPersonas from '@/components/shared/HeroPersonas'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
+
 const EmpresasPage = () => {
   return (
     <>

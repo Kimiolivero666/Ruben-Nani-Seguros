@@ -1,4 +1,6 @@
-
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
 
 :root{
   --azul: #023059;
