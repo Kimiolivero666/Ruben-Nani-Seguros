@@ -1,25 +1,30 @@
-'use client'
-
+'use client';
 
 import Link from "next/link";
 import styles from './subMenuEmpresas.module.css';
-import { useState } from "react";
-
-
+import { useState, useEffect } from "react";
+import { usePathname, useSearchParams } from 'next/navigation';
 
 function SubMenuEmpresas() {
     const [activeLink, setActiveLink] = useState('empresas');
+    const pathname = usePathname(); // Obtiene la ruta actual
+    const searchParams = useSearchParams(); // Obtiene los parámetros de búsqueda actuales
 
     const handleLinkClick = (linkId: string) => {
         setActiveLink(linkId);
     };
 
-
+    useEffect(() => {
+        // Desplazarse hacia la parte superior después de un cambio de ruta
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, [pathname, searchParams]); // Ejecutar cuando la ruta o los parámetros cambien
 
     return (
         <ul className={styles.subMenu}>
-
-            <li >
+            <li>
                 <Link
                     href="/empresas"
                     className={`${styles.link} ${activeLink === 'empresas' ? styles.activeLink : ''}`}
