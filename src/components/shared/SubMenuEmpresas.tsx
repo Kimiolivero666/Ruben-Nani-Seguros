@@ -6,21 +6,22 @@ import { useState, useEffect } from "react";
 import { usePathname, useSearchParams } from 'next/navigation';
 
 function SubMenuEmpresas() {
-    const [activeLink, setActiveLink] = useState('empresas');
     const pathname = usePathname(); // Obtiene la ruta actual
-    const searchParams = useSearchParams(); // Obtiene los parámetros de búsqueda actuales
-
-    const handleLinkClick = (linkId: string) => {
-        setActiveLink(linkId);
-    };
+    const [activeLink, setActiveLink] = useState(pathname.split('/')[2] || 'empresas'); // Extraer la parte relevante de la ruta
 
     useEffect(() => {
+        // Ajustar activeLink basado en la ruta actual
+        setActiveLink(pathname.split('/')[2] || 'empresas');
         // Desplazarse hacia la parte superior después de un cambio de ruta
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
-    }, [pathname, searchParams]); // Ejecutar cuando la ruta o los parámetros cambien
+    }, [pathname]); // Solo observar cambios en pathname
+
+    const handleLinkClick = (linkId: string) => {
+        setActiveLink(linkId);
+    };
 
     return (
         <ul className={styles.subMenu}>
