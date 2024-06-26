@@ -74,13 +74,13 @@
     }
 
     .link {
-        padding: 0,5rem;
+        padding: 0.5rem;
         border-radius: 10px;
         font-size: 15px;
     }
 
     .link.activeLink {
-        padding: 0,5rem;
+        padding: 0.5rem;
         font-size: 15px;
     }
     
