@@ -11,9 +11,9 @@ const EmpresasLayout = ({ children }: { children: React.ReactNode }) => {
         <Container>
           <h1 className={styles.title}>Empresas</h1>
           <div className="pb-3">
-          <SubMenuEmpresas />
+            <SubMenuEmpresas />
           </div>
-         
+
         </Container>
       </section>
       {children}

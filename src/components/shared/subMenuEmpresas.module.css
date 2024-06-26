@@ -67,22 +67,22 @@
 
 /* responsive */
 
-@media screen and (max-width: 768px){
-    .subMenu {
-        flex-direction: column;
-        gap: 2rem;
-    }
+ @media screen and (max-width: 768px){ 
+    .subMenu {  
+         flex-direction: column; 
+         gap: 0.5rem; 
+      }  
 
-    .link {
-        padding: 1rem;
-        border-radius: 10px;
-        font-size: 20px;
-    }
+    .link { 
+        padding: 0.5rem; 
+        border-radius: 10px; 
+        font-size: 15px; 
+    } 
 
-    .link.activeLink {
-        padding: 1rem;
-        font-size: 15px;
-        font-size: 20px;
-    }
-    
-}
+    .link.activeLink { 
+         padding: 0.5rem; 
+         font-size: 15px; 
+        font-size: 15px; 
+     } 
+     
+ } 
