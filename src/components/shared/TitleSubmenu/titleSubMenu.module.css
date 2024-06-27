@@ -1,0 +1,17 @@
+.titleSubMenu{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: none;
+}
+
+.titleSubMenu h6{
+color: var(--azul);
+margin-left: 20px;
+margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px){
+    .titleSubMenu{
+        display: block;
+    } 
+}

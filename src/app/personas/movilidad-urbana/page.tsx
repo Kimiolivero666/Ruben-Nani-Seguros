@@ -7,13 +7,14 @@ import FooterPersonas from '@/components/shared/FooterPersonas';
 import Image from "next/image";
 import styles from './movilidadUrbana.module.css';
 import HeroPersonas from '@/components/shared/HeroPersonas';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 
 const movilidadUrbana = () => {
   return (
 
-    <div id='movilidad-urbana'>
-
+    <div>
+      <TitleSubMenu text='Movilidad Urbana' />
       <HeroPersonas
         text1="Hacé lo que"
         text2="más te"
@@ -90,7 +91,7 @@ const movilidadUrbana = () => {
         </Row>
       </Container>
 
- <Container className="my-5">
+      <Container className="my-5">
 
         <TextBox
           title='Responsabilidad civil'

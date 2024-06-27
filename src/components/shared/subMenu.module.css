@@ -1,3 +1,4 @@
+/* Estilos comunes */
 .subMenu {
     display: flex;
     justify-content: space-between;
@@ -7,10 +8,7 @@
 .link {
     text-decoration: none;
     color: var(--blanco);
-    padding-bottom: 2.3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
+    padding: 1rem 2rem 2.3rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-weight: 500;
@@ -26,26 +24,22 @@
 .link.activeLink {
     color: var(--azul);
     background: var(--blanco);
-    padding-bottom: 2.3rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
+    padding: 1rem 2rem 2.3rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-weight: 500;
     font-size: 20px;
 }
 
+.barns {
+    display: none;
+}
 
+/* Estilos para pantallas grandes */
 @media screen and (max-width: 1200px) {
     .link {
         font-size: 15px;
     }
-
-}
-
-
-@media screen and (max-width: 1200px) {
     .subMenu {
         justify-content: left;
     }
@@ -62,15 +56,53 @@
         padding-top: 1rem;
         font-size: 15px;
     }
+
 }
 
 
-/* responsive */
 
-@media screen and (max-width: 768px){
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .barns {
+        display: block;
+        background: var(--azul);
+        color: var(--blanco);
+        position: absolute;
+        right: 20px;
+        bottom: -55px;
+        padding: 5px;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .subMenuBox {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        display: none; /* Inicialmente oculto */
+        background: var(--azul);
+        transition: display 0.3s ease-in-out;
+    }
+
     .subMenu {
         flex-direction: column;
         gap: 0.5rem;
+        height: auto;
+        width: 100%;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    .menuVisible {
+        display: block; /* Mostrar menú cuando esté abierto */
+    }
+
+    .menuHidden {
+        display: none; /* Ocultar menú cuando esté cerrado */
     }
 
     .link {
@@ -83,5 +115,4 @@
         padding: 0.5rem;
         font-size: 15px;
     }
-    
 }

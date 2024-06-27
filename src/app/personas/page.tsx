@@ -3,10 +3,12 @@ import { Container } from 'react-bootstrap';
 import DataTable from '@/components/UI/DataTable';
 import FooterPersonas from '@/components/shared/FooterPersonas';
 import HeroPersonas from '@/components/shared/HeroPersonas';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const PersonasPage = () => {
   return (
     <>
+      <TitleSubMenu text='Auto'/>
       <HeroPersonas
         text1="Conocé las"
         text2="coberturas"
@@ -17,7 +19,7 @@ const PersonasPage = () => {
       <Container className="my-5">
         <DataTable />
       </Container>
-      <FooterPersonas title1='¿Ya tenés póliza?' title2='Envianosla y te mejoramos los costos en las' title3='mejores compañías'/>
+      <FooterPersonas title1='¿Ya tenés póliza?' title2='Envianosla y te mejoramos los costos en las' title3='mejores compañías' />
     </>
   );
 };

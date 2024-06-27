@@ -5,10 +5,12 @@ import { Col, Container, Row } from 'react-bootstrap';
 import TextBox from '@/components/UI/TextBox';
 import HeroPersonas from '@/components/shared/HeroPersonas';
 import CotizarButton from '@/components/UI/CotizarButton';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const Salud = () => {
   return (
-    <div id='salud'>
+    <div>
+      <TitleSubMenu text='Salud' />
       <HeroPersonas
         text1="Tu familia se"
         text2="merece estar"

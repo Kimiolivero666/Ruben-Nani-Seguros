@@ -5,12 +5,14 @@ import { Container } from 'react-bootstrap';
 import TextBox from '@/components/UI/TextBox';
 import FooterPersonas from '@/components/shared/FooterPersonas';
 import HeroPersonas from '@/components/shared/HeroPersonas';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 
 
 const page = () => {
   return (
-    <div id='hogar-y-accidentes-personales'>
+    <div>
+      <TitleSubMenu text='Hogar y accidentes personales' />
       <HeroPersonas
         text1="Mantené"
         text2="asegurado lo"
