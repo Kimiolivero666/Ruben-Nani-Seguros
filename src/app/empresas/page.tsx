@@ -1,6 +1,7 @@
 import DataTable from '@/components/UI/DataTable'
 import FooterPersonas from '@/components/shared/FooterPersonas'
 import HeroPersonas from '@/components/shared/HeroPersonas'
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu'
 import React from 'react'
 import { Container } from 'react-bootstrap'
 
@@ -8,6 +9,8 @@ import { Container } from 'react-bootstrap'
 const EmpresasPage = () => {
   return (
     <>
+    <TitleSubMenu text='Auto' />
+
       <HeroPersonas
         text1="Consultá por"
         text2="tu flota."

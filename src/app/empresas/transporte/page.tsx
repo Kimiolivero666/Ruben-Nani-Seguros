@@ -4,10 +4,13 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import styles from './transporte.module.css';
 import CotizarButton from '@/components/UI/CotizarButton';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const transporte = () => {
   return (
     <div>
+      <TitleSubMenu text='Transporte' />
+
       <HeroPersonas
         text1="Asegurá tus"
         text2="cargas valiosas."

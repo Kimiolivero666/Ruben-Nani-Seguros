@@ -3,6 +3,8 @@
 import Link from "next/link";
 import styles from './subMenu.module.css';
 import { useState, useEffect } from "react";
+
+// importacion de arrow
 import { FaArrowDown } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -10,8 +12,18 @@ function SubMenu() {
     const [activeLink, setActiveLink] = useState('personas');
     const [menuOpen, setMenuOpen] = useState(false);
 
+    // Leer el enlace activo de localStorage al montar el componente
+    useEffect(() => {
+        const savedActiveLink = localStorage.getItem('activeLink');
+        if (savedActiveLink) {
+            setActiveLink(savedActiveLink);
+        }
+    }, []);
+
+    // Guardar el enlace activo en localStorage cuando se cambia
     const handleLinkClick = (linkId: string) => {
         setActiveLink(linkId);
+        localStorage.setItem('activeLink', linkId);
         setMenuOpen(false);  // Cierra el menú al hacer clic en un enlace
     };
 

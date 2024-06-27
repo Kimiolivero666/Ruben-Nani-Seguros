@@ -6,10 +6,13 @@ import { Container } from 'react-bootstrap';
 import TextBox from '@/components/UI/TextBox';
 import ButtonPrimary from '@/components/UI/ButtonPrimary';
 import CotizarButton from '@/components/UI/CotizarButton';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const page = () => {
   return (
     <div>
+      <TitleSubMenu text='Salud' />
+
       <HeroPersonas
         text1="Tus empleados"
         text2="deben estar"

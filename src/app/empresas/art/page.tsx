@@ -2,11 +2,13 @@ import CotizarButton from '@/components/UI/CotizarButton'
 import HeroPersonas from '@/components/shared/HeroPersonas'
 import React from 'react'
 import styles from './art.module.css';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const page = () => {
   return (
 
     <div>
+      <TitleSubMenu text='ART' />
       <HeroPersonas
         text1="Cuidás a tus"
         text2="empleados,"

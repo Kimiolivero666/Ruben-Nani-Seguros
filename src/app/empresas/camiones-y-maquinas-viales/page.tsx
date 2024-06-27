@@ -4,10 +4,13 @@ import { Col, Container, Row } from 'react-bootstrap'
 import styles from './camiones.module.css';
 import Image from 'next/image';
 import FooterPersonas from '@/components/shared/FooterPersonas';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const page = () => {
   return (
     <div>
+      <TitleSubMenu text='Camiones y máquinas' />
+
       <HeroPersonas
         text1="Asegurá tu"
         text2="flota de"

@@ -90,11 +90,10 @@
         gap: 0.5rem;
         height: auto;
         width: 100%;
-        align-items: center;
+        align-items: start;
         padding-top: 2rem;
         padding-bottom: 2rem;
         margin: 0;
-        padding-left: 0;
     }
 
     .menuVisible {

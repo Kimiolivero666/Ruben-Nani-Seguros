@@ -36,7 +36,11 @@
     font-size: 20px;
 }
 
+.barns {
+    display: none;
+}
 
+/* Estilos para pantallas grandes */
 @media screen and (max-width: 1200px) {
     .link {
         font-size: 15px;
@@ -67,22 +71,60 @@
 
 /* responsive */
 
- @media screen and (max-width: 768px){ 
-    .subMenu {  
-         flex-direction: column; 
-         gap: 0.5rem; 
-      }  
+@media screen and (max-width: 768px) {
+    .barns {
+        display: block;
+        background: var(--azul);
+        color: var(--blanco);
+        position: absolute;
+        right: 20px;
+        bottom: -55px;
+        padding: 5px;
+        border-radius: 50%;
+        font-size: 25px;
+        cursor: pointer;
+    }
 
-    .link { 
-        padding: 0.5rem; 
-        border-radius: 10px; 
-        font-size: 15px; 
-    } 
+    .subMenuBox {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        display: none;
+        /* Inicialmente oculto */
+        background: var(--celeste);
+        transition: display 0.3s ease-in-out;
+    }
 
-    .link.activeLink { 
-         padding: 0.5rem; 
-         font-size: 15px; 
-        font-size: 15px; 
-     } 
-     
- } 
+    .subMenu {
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        width: 100%;
+        align-items: start;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin: 0;
+    }
+
+    .menuVisible {
+        display: block;
+        /* Mostrar menú cuando esté abierto */
+    }
+
+    .menuHidden {
+        display: none;
+        /* Ocultar menú cuando esté cerrado */
+    }
+
+    .link {
+        padding: 0.5rem;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+
+    .link.activeLink {
+        padding: 0.5rem;
+        font-size: 15px;
+    }
+
+}

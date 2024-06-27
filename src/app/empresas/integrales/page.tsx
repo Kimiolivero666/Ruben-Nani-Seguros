@@ -4,10 +4,13 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import styles from './integrales.module.css';
 import CotizarButton from '@/components/UI/CotizarButton';
+import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
 
 const page = () => {
   return (
     <div>
+      <TitleSubMenu text='Integrales' />
+
       <HeroPersonas
         text1="Agrupá riesgos"
         text2="en una misma"
