@@ -15,7 +15,7 @@ interface CotizarButtonProps {
 
 const CotizarButton: FC<CotizarButtonProps> = ({ type = 'button', text, className, textClassName, IconoclassName }) => {
 
-  const phoneNumber = "+542616431234";
+  const phoneNumber = "+542616301566";
   const message = "¡Hola! Estoy interesado en obtener más información.";
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   

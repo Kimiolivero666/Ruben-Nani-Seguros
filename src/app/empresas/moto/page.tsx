@@ -2,9 +2,9 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import TextBox from '@/components/UI/TextBox';
-import FooterPersonas from '@/components/shared/FooterPersonas';
 import HeroPersonas from '@/components/shared/HeroPersonas';
 import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
+import FooterPersonas from '@/components/shared/FooterPersonas';
 
 const moto = () => {
   return (

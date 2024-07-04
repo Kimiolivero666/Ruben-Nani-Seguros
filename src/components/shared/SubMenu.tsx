@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import styles from './subMenu.module.css';
 import { useState, useEffect } from "react";
 
-// importacion de arrow
+// Importación de flechas
 import { FaArrowDown } from "react-icons/fa";
 import { FaArrowUp } from "react-icons/fa";
 
@@ -20,8 +20,33 @@ function SubMenu() {
         }
     }, []);
 
-    // Guardar el enlace activo en localStorage cuando se cambia
-    const handleLinkClick = (linkId: string) => {
+    // Detectar cambios en la URL y actualizar el enlace activo
+    useEffect(() => {
+        const updateActiveLink = () => {
+            const path = window.location.pathname.split('/').pop();
+            const newActiveLink = path || 'personas'; // Valor predeterminado
+            setActiveLink(newActiveLink);
+            localStorage.setItem('activeLink', newActiveLink);
+        };
+
+        // Inicialmente configura el enlace activo basado en la URL actual
+        updateActiveLink();
+
+        // Escuchar el evento popstate (para navegaciones de historial)
+        window.addEventListener('popstate', updateActiveLink);
+
+        // Escuchar el evento hashchange (para cambios de hash en la URL)
+        window.addEventListener('hashchange', updateActiveLink);
+
+        return () => {
+            // Limpiar los listeners cuando el componente se desmonta
+            window.removeEventListener('popstate', updateActiveLink);
+            window.removeEventListener('hashchange', updateActiveLink);
+        };
+    }, []);
+
+    // Guardar el enlace activo en:stringlocalStorage cuando se cambia
+    const handleLinkClick = (linkId:string) => {
         setActiveLink(linkId);
         localStorage.setItem('activeLink', linkId);
         setMenuOpen(false);  // Cierra el menú al hacer clic en un enlace

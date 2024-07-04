@@ -59,8 +59,8 @@ export const Footer = () => {
                             <ul>
                                 <li className={styles.footerLiInfo}>
                                     <FaWhatsapp className={styles.icon} />
-                                    <a href="https://wa.me/+542616431234" target="_blank" rel="noopener noreferrer" >
-                                        2616431234
+                                    <a href="https://wa.me/+542616301566" target="_blank" rel="noopener noreferrer" >
+                                        2616301566
                                     </a>
                                 </li>
                                 <li className={styles.footerLiInfo}>

@@ -3,8 +3,9 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import styles from './camiones.module.css';
 import Image from 'next/image';
-import FooterPersonas from '@/components/shared/FooterPersonas';
+
 import TitleSubMenu from '@/components/shared/TitleSubmenu/TitleSubMenu';
+import FooterPersonas from '@/components/shared/FooterPersonas';
 
 const page = () => {
   return (

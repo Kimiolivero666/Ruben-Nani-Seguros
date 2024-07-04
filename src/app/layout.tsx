@@ -1,11 +1,12 @@
 // src/app/layout.tsx
-import { Footer } from '@/components/shared/Footer';
+
 import NavbarMenu from '@/components/shared/NavbarMenu';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 
 
 import { Ubuntu } from '@next/font/google';
+import { Footer } from '@/components/shared/Footer';
 
 
 const ubuntu = Ubuntu({
