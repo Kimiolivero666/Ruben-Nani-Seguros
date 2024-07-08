@@ -17,11 +17,17 @@ const ubuntu = Ubuntu({
 export const metadata = {
   title: 'Ruben Fernando Nani',
   description: 'Seguros',
+  keywords: 'seguros, seguros de vida, seguros de autos, seguros para empresas, seguros de salud, Seguros de hogar, seguros de accidentes, seguros para pymes, asesoría en seguros, cotizacion de seguros',  // Palabras clave para SEO
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Puedes agregar más enlaces aquí si es necesario */}
+      </head>
       <body className={ubuntu.className}>
         
         <NavbarMenu/>
