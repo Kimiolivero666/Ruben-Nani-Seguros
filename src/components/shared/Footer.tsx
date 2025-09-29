@@ -9,6 +9,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
 
 export const Footer = () => {
     return (
@@ -60,7 +61,7 @@ export const Footer = () => {
                                 <li className={styles.footerLiInfo}>
                                     <FaWhatsapp className={styles.icon} />
                                     <a href="https://wa.me/+542616301566" target="_blank" rel="noopener noreferrer" >
-                                        2616301566
+                                        261-3467479
                                     </a>
                                 </li>
                                 <li className={styles.footerLiInfo}>
@@ -69,22 +70,29 @@ export const Footer = () => {
                                 </li>
                                 <li className={styles.footerLiInfo}>
                                     <MdOutlineEmail className={styles.icon} />
-                                    <a href="mailto:rubennani2024@gmail.com?subject=Asunto%20Predefinido&body=Mensaje%20Predefinido">
-                                        rubennani2024@gmail.com
+                                    <a href="mailto: rubennaniseguros@gmail.com?subject=Asunto%20Predefinido&body=Mensaje%20Predefinido">
+                                        rubennaniseguros@gmail.com
                                     </a>
 
                                 </li>
                                 <li className={styles.footerLiInfo}>
                                     <FaLocationDot />
                                     <p>
-                                        Chuquisaca, 1010 Godoy Cruz. Mendoza
+                                        Centro Comercial Lomas local 2 Av. Champagnat esquina Dr. Leloir Mendoza.
                                     </p>
 
                                 </li>
                                 <li className={styles.footerLiInfo}>
                                     <FaInstagram />
-                                    <a href="https://www.instagram.com/rubenfernandonani/" target="_blank" rel="noopener noreferrer">
-                                        rubenfernandonani
+                                    <a href="https://www.instagram.com/rubennani.seguros/" target="_blank" rel="noopener noreferrer">
+                                        rubennani.seguros
+                                    </a>
+                                </li>
+
+                                <li className={styles.footerLiInfo}>
+                                    <ImFacebook2 />
+                                    <a href="https://www.facebook.com/RubennaniSeguros/" target="_blank" rel="noopener noreferrer">
+                                        Rubennani Seguros
                                     </a>
                                 </li>
                                 <li>

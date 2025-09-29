@@ -5,7 +5,7 @@ import styles from './ButtonContact.module.css';
 import { MdOutlineEmail } from "react-icons/md";
 
 const ButtonContact2 = () => {
-  const email = "rubennani2024@gmail.com";
+  const email = "rubennaniseguros@gmail.com";
   const subject = "Consulta de información";
   const body = "¡Hola! Estoy interesado en obtener más información.";
 

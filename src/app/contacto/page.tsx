@@ -8,6 +8,7 @@ import ButtonContact2 from '@/components/UI/ButtonContact2';
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
 
 
 const ContactoPage = () => {
@@ -49,23 +50,31 @@ const ContactoPage = () => {
                 <div className={styles.boxContacto}>
                   <FaLocationDot className={styles.icon} />
                 </div>
-                <h6 className={styles.info}>Chuquisaca, 1010 Godoy Cruz. Mendoza</h6>
+                <h6 className={styles.info}> Centro Comercial Lomas local 2 Av. Champagnat esquina Dr.Leloir Mendoza.</h6>
               </div>
             </Col>
           </Row>
 
           <Row className=''>
-            <Col md={3}>
-
-            </Col>
             <Col md={6} className="d-flex justify-content-center align-items-center">
               <div className="text-center mb-5 w-100">
-                <a href="https://www.instagram.com/rubenfernandonani/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/rubennani.seguros/" target="_blank" rel="noopener noreferrer">
                   <div className={styles.button}>
                     <FaInstagram className={styles.icon} />
                   </div>
                 </a>
                 <h6 className={styles.info}>rubenfernandonani</h6>
+              </div>
+            </Col>
+
+            <Col md={6} className="d-flex justify-content-center align-items-center">
+              <div className="text-center mb-5 w-100">
+                <a href="https://www.facebook.com/RubennaniSeguros/" target="_blank" rel="noopener noreferrer">
+                  <div className={styles.button}>
+                    <ImFacebook2 className={styles.icon} />
+                  </div>
+                </a>
+                <h6 className={styles.info}>Rubennani Seguros</h6>
               </div>
             </Col>
           </Row>
